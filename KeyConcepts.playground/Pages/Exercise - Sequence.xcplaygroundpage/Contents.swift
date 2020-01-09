@@ -36,9 +36,18 @@ let lightRed = Color(hue: 4, saturation: 78, brightness: 92, alpha: 100)
 canvas.fillColor = grey
 canvas.drawRectangle(at: Point(x:0, y:0), width: 400, height: 600)
 
-canvas.drawShapesWithBorders = false
-canvas.fillColor = lightRed
-canvas.drawEllipse(at: Point(x:200 , y:200), width: 380, height: 380)
+canvas.drawShapesWithBorders = true
+canvas.drawShapesWithFill = false
+canvas.borderColor = lightRed
+canvas.drawEllipse(at: Point(x:200 , y:200), width: 270, height: 270, borderWidth: 100)
+
+canvas.borderColor = lightBlue
+canvas.drawEllipse(at: Point(x:350, y:200), width:270 , height: 270, borderWidth: 100)
+
+
+
+
+
 
 // HINT: Remember that all shapes have a fill and a border.
 //       You can turn off the fill or border if desired.
