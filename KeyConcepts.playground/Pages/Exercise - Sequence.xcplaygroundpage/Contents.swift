@@ -44,10 +44,17 @@ canvas.drawEllipse(at: Point(x:200 , y:200), width: 270, height: 270, borderWidt
 canvas.borderColor = lightBlue
 canvas.drawEllipse(at: Point(x:350, y:200), width:270 , height: 270, borderWidth: 100)
 
+canvas.drawText(message: "friday", at: Point(x:15, y:570), size: 10)
+canvas.drawText(message: "december 4 1987", at: Point(x:15, y:555), size: 10)
+canvas.drawText(message: "8 pm show", at: Point(x:15, y:540), size: 10)
 
+canvas.drawText(message: "with", at: Point(x:120, y:570), size: 10)
+canvas.drawText(message: "social distortion", at: Point(x:120, y:555), size: 10)
+canvas.drawText(message: "and opal", at: Point(x:120, y:540), size: 10)
 
-
-
+canvas.drawText(message: "hollywood palladium", at: Point(x:275, y:570), size: 10)
+canvas.drawText(message: "6215 sunset blvd.", at: Point(x:275, y:555), size: 10)
+canvas.drawText(message: "los angeles, california", at: Point(x:275, y:540), size: 10)
 
 // HINT: Remember that all shapes have a fill and a border.
 //       You can turn off the fill or border if desired.
@@ -68,9 +75,13 @@ canvas.drawEllipse(at: Point(x:350, y:200), width:270 , height: 270, borderWidth
 
 
 
+for j in 1...7 {
+    canvas.drawLine(from: Point(x:j*50, y:0), to: Point(x:j*50, y: 600))
+}
 
-
-
+for m in 1...11 {
+    canvas.drawLine(from: Point(x:0,y:m*50), to: Point(x:400,y:m*50))
+}
 
 
 
